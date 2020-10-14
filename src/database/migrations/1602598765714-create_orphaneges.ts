@@ -6,7 +6,7 @@ export class createOrphaneges1602598765714 implements MigrationInterface {
         //REALIZA TODAS ALTERAÇÕES QUE EU QUISER
 
         await queryRunner.createTable(new Table({
-            name: "orphaneges",
+            name: "orphanages",
             columns: [
                 {
                     name: 'id',
@@ -62,7 +62,7 @@ export class createOrphaneges1602598765714 implements MigrationInterface {
 
     public async down(queryRunner: QueryRunner): Promise<void> {
         //DESFAZ TUDO QUE FOI FEITO NO METODO UP
-        await queryRunner.dropTable('orphaneges');
+        await queryRunner.dropTable('orphanages');
     }
 
 }
